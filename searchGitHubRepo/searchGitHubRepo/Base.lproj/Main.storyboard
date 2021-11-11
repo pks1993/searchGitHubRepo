@@ -27,21 +27,31 @@
                                 <rect key="frame" x="0.0" y="138" width="414" height="724"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ieU-qE-zAv">
+                                <rect key="frame" x="192" y="460" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3Al-zr-FPU"/>
+                                    <constraint firstAttribute="width" constant="30" id="LPP-4P-kgj"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="blr-SL-SWc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1XL-wA-bHt"/>
+                            <constraint firstItem="ieU-qE-zAv" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5yb-wD-R6U"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gik-lf-pJL" secondAttribute="bottom" id="LRp-Gy-HJM"/>
                             <constraint firstItem="gik-lf-pJL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N7W-c1-YVx"/>
                             <constraint firstItem="gik-lf-pJL" firstAttribute="top" secondItem="blr-SL-SWc" secondAttribute="bottom" id="RR7-OM-vog"/>
                             <constraint firstItem="blr-SL-SWc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YIZ-oZ-ft5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gik-lf-pJL" secondAttribute="trailing" id="Ypi-7o-AVi"/>
+                            <constraint firstItem="ieU-qE-zAv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Z31-GW-WyV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="blr-SL-SWc" secondAttribute="trailing" id="gAD-9K-MtX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pV3-3X-hIp"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="ieU-qE-zAv" id="rfg-4d-vzF"/>
                         <outlet property="searchBar" destination="blr-SL-SWc" id="z2Z-2p-icu"/>
                         <outlet property="tblRepository" destination="gik-lf-pJL" id="AAp-5m-M3B"/>
                     </connections>
@@ -49,6 +59,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="83.705357142857139"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="yc2-7t-MBf">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" id="yk2-MP-JcH" customClass="WebViewController" customModule="searchGitHubRepo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nDb-qp-8jq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQK-NH-Djf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Fr-3a-7hL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rQK-NH-Djf" firstAttribute="top" secondItem="8Fr-3a-7hL" secondAttribute="top" id="45O-oW-uwL"/>
+                            <constraint firstItem="8Fr-3a-7hL" firstAttribute="bottom" secondItem="rQK-NH-Djf" secondAttribute="bottom" id="e3t-Ky-chq"/>
+                            <constraint firstItem="8Fr-3a-7hL" firstAttribute="trailing" secondItem="rQK-NH-Djf" secondAttribute="trailing" id="rBN-4T-qMP"/>
+                            <constraint firstItem="rQK-NH-Djf" firstAttribute="leading" secondItem="8Fr-3a-7hL" secondAttribute="leading" id="t2Q-1f-o5y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="rQK-NH-Djf" id="MQZ-SX-Vps"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J8b-nQ-SD1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1764" y="84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ib5-Hc-3RD">

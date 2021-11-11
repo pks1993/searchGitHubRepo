@@ -33,18 +33,8 @@ struct ApiClient {
         
         let task = session.dataTask(with : urlRequest) { data, response, error  in
             
-            print("Response >>>>" , response)
             if let response =  response as? HTTPURLResponse ,
                response.statusCode == 200 {
-                if let json = try? JSONSerialization.jsonObject(with: data!, options: .fragmentsAllowed) {
-                    print("Response Json >>>> " , json)
-                    
-                }
-//                if let data = data {
-//                    let encoder = JSONDecoder()
-//                    let repository =  try? encoder.decode(RepositoryVO.self, from: data)
-//                    success(repository)
-//                }
                
                 if let data = data {
                     let repository : RepositoryVO? =  data.decode(modelType: RepositoryVO.self)
@@ -52,15 +42,9 @@ struct ApiClient {
                 }
                 
             }
-            else {
-//                if let json = try? JSONSerialization.jsonObject(with: data!, options: []) {
-//                    print("Response Json >>>> " , json)
-//                }
-            }
-            
-            
+          
             if let error = error {
-                print("Error >>>>" , error.localizedDescription)
+                failure(error)
             }
         }
         task.resume()

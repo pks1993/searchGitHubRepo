@@ -29,6 +29,7 @@ class SearchResultTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    // MARK: - setup cell data
     func setupCell(item : Item?) {
         DispatchQueue.main.async {
             if let image = try? UIImage(data: Data(contentsOf: URL(string: item?.owner?.avatarURL ?? "")!)){
@@ -43,6 +44,7 @@ class SearchResultTableViewCell: UITableViewCell {
         
     }
     
+    // MARK: - setup ui and font
     private func setupUI() {
         self.imgAvater.layer.cornerRadius = 40
         self.imgAvater.layer.borderColor = UIColor.darkGray.cgColor

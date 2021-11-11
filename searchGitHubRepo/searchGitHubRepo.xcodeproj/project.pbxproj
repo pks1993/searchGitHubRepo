@@ -22,8 +22,8 @@
 		F01266C1273B936C00BBEB7C /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F01266B5273B936C00BBEB7C /* Roboto-LightItalic.ttf */; };
 		F01266C2273B936C00BBEB7C /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F01266B6273B936C00BBEB7C /* Roboto-BoldItalic.ttf */; };
 		F01266C4273B93D400BBEB7C /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01266C3273B93D400BBEB7C /* UIFont + Extension.swift */; };
-		F01266CA273BC59B00BBEB7C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01266C9273BC59A00BBEB7C /* LoadingView.swift */; };
-		F01266CC273BC5AE00BBEB7C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F01266CB273BC5AE00BBEB7C /* LoadingView.xib */; };
+		F01266CE273CB84C00BBEB7C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01266CD273CB84C00BBEB7C /* Reachability.swift */; };
+		F01266D5273CCDF600BBEB7C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01266D3273CCDF600BBEB7C /* WebViewController.swift */; };
 		F09CE2A2273A1396008EE062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CE2A1273A1396008EE062 /* AppDelegate.swift */; };
 		F09CE2A6273A1396008EE062 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CE2A5273A1396008EE062 /* SearchResultViewController.swift */; };
 		F09CE2A9273A1396008EE062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09CE2A7273A1396008EE062 /* Main.storyboard */; };
@@ -34,7 +34,6 @@
 		F09CE2C5273A139A008EE062 /* searchGitHubRepoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CE2C4273A139A008EE062 /* searchGitHubRepoUITestsLaunchTests.swift */; };
 		F09CE2D3273A19B9008EE062 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CE2D2273A19B9008EE062 /* ApiClient.swift */; };
 		F09CE2D6273A2198008EE062 /* RepositoryVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CE2D5273A2198008EE062 /* RepositoryVO.swift */; };
-		F09CE2DC273A6590008EE062 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CE2DB273A6590008EE062 /* SearchModel.swift */; };
 		F09CE2DE273A6644008EE062 /* Data + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CE2DD273A6644008EE062 /* Data + Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,8 +70,8 @@
 		F01266B5273B936C00BBEB7C /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
 		F01266B6273B936C00BBEB7C /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
 		F01266C3273B93D400BBEB7C /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
-		F01266C9273BC59A00BBEB7C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		F01266CB273BC5AE00BBEB7C /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		F01266CD273CB84C00BBEB7C /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F01266D3273CCDF600BBEB7C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F09CE29E273A1396008EE062 /* searchGitHubRepo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = searchGitHubRepo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09CE2A1273A1396008EE062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F09CE2A5273A1396008EE062 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +86,6 @@
 		F09CE2C4273A139A008EE062 /* searchGitHubRepoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchGitHubRepoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F09CE2D2273A19B9008EE062 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		F09CE2D5273A2198008EE062 /* RepositoryVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryVO.swift; sourceTree = "<group>"; };
-		F09CE2DB273A6590008EE062 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		F09CE2DD273A6644008EE062 /* Data + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,7 +134,7 @@
 		F012669F273B7DAE00BBEB7C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F09CE2A5273A1396008EE062 /* SearchResultViewController.swift */,
+				F01266D7273CCDFB00BBEB7C /* Swifts */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -193,27 +191,11 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		F01266C6273BC56100BBEB7C /* CustomViews */ = {
+		F01266D7273CCDFB00BBEB7C /* Swifts */ = {
 			isa = PBXGroup;
 			children = (
-				F01266C8273BC57F00BBEB7C /* Swifts */,
-				F01266C7273BC57800BBEB7C /* Views */,
-			);
-			path = CustomViews;
-			sourceTree = "<group>";
-		};
-		F01266C7273BC57800BBEB7C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F01266CB273BC5AE00BBEB7C /* LoadingView.xib */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		F01266C8273BC57F00BBEB7C /* Swifts */ = {
-			isa = PBXGroup;
-			children = (
-				F01266C9273BC59A00BBEB7C /* LoadingView.swift */,
+				F09CE2A5273A1396008EE062 /* SearchResultViewController.swift */,
+				F01266D3273CCDF600BBEB7C /* WebViewController.swift */,
 			);
 			path = Swifts;
 			sourceTree = "<group>";
@@ -241,17 +223,15 @@
 		F09CE2A0273A1396008EE062 /* searchGitHubRepo */ = {
 			isa = PBXGroup;
 			children = (
-				F09CE2D8273A2EED008EE062 /* VOs */,
-				F09CE2D4273A2128008EE062 /* Model */,
-				F09CE2D1273A19A5008EE062 /* Network */,
 				F09CE2A1273A1396008EE062 /* AppDelegate.swift */,
+				F09CE2D8273A2EED008EE062 /* VOs */,
+				F09CE2D1273A19A5008EE062 /* Network */,
 				F012669D273B7D9900BBEB7C /* Modules */,
 				F09CE2A7273A1396008EE062 /* Main.storyboard */,
 				F09CE2AA273A139A008EE062 /* Assets.xcassets */,
 				F09CE2AC273A139A008EE062 /* LaunchScreen.storyboard */,
 				F09CE2AF273A139A008EE062 /* Info.plist */,
 				F01266A9273B935500BBEB7C /* Resources */,
-				F01266C6273BC56100BBEB7C /* CustomViews */,
 				F09CE2D7273A21BD008EE062 /* Extensions */,
 			);
 			path = searchGitHubRepo;
@@ -278,16 +258,9 @@
 			isa = PBXGroup;
 			children = (
 				F09CE2D2273A19B9008EE062 /* ApiClient.swift */,
+				F01266CD273CB84C00BBEB7C /* Reachability.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		F09CE2D4273A2128008EE062 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F09CE2DB273A6590008EE062 /* SearchModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		F09CE2D7273A21BD008EE062 /* Extensions */ = {
@@ -412,7 +385,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F01266B8273B936C00BBEB7C /* Roboto-ThinItalic.ttf in Resources */,
-				F01266CC273BC5AE00BBEB7C /* LoadingView.xib in Resources */,
 				F01266BE273B936C00BBEB7C /* Roboto-Italic.ttf in Resources */,
 				F01266C1273B936C00BBEB7C /* Roboto-LightItalic.ttf in Resources */,
 				F09CE2AE273A139A008EE062 /* LaunchScreen.storyboard in Resources */,
@@ -453,12 +425,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F01266C4273B93D400BBEB7C /* UIFont + Extension.swift in Sources */,
-				F01266CA273BC59B00BBEB7C /* LoadingView.swift in Sources */,
+				F01266D5273CCDF600BBEB7C /* WebViewController.swift in Sources */,
 				F01266A5273B7DFD00BBEB7C /* SearchResultTableViewCell.swift in Sources */,
 				F09CE2A6273A1396008EE062 /* SearchResultViewController.swift in Sources */,
 				F09CE2A2273A1396008EE062 /* AppDelegate.swift in Sources */,
 				F09CE2D6273A2198008EE062 /* RepositoryVO.swift in Sources */,
-				F09CE2DC273A6590008EE062 /* SearchModel.swift in Sources */,
+				F01266CE273CB84C00BBEB7C /* Reachability.swift in Sources */,
 				F09CE2D3273A19B9008EE062 /* ApiClient.swift in Sources */,
 				F09CE2DE273A6644008EE062 /* Data + Extension.swift in Sources */,
 			);
